@@ -59,3 +59,17 @@ for ( $iterator = 0; $iterator < 8; $iterator = $iterator + 2 ) {
 
 $myArrayLength = count( $myArray );
 echo "\n\nThe variable \$myArray contains $myArrayLength items."; 
+echo "\n\nThe variable \$myArray contains $myArrayLength items.";
+
+// While loop example.
+?>
+
+While loop:<?php
+$myI = 10;
+while ( $myI >= -35 ) {
+  echo "\n - While loop current value = $myI";
+  $myI -= 5; // Same as typing...
+             // $myI = $myI - 5;
+}
+
+echo "\n\nArrays again...\n\n";
