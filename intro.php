@@ -48,7 +48,14 @@ $myObject->age  = 36;
 $myObject->hobbies = ["programming", "skydiving"];
 echo "\nHello, my name is {$myObject->name}.\nI am {$myObject->age} years old.\nI enjoy the following activities:";
 // Oh, we'll need to loop through our array of hobbies!
-
+// Foreach works almost identically to "for...of" in JavaScript!
 foreach ( $myObject->hobbies as $hobby ) { // Note: $hobby in this case represents the current iterated item in the array. Can be any variable name.
   echo "\n ♥ $hobby";
 } 
+echo "\n\n Let's try a \"for\" loop!";
+for ( $iterator = 0; $iterator < 8; $iterator = $iterator + 2 ) {
+  echo "\nCurrent value in loop: $iterator";
+}
+
+$myArrayLength = count( $myArray );
+echo "\n\nThe variable \$myArray contains $myArrayLength items."; 
