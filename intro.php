@@ -96,3 +96,21 @@ foreach ( $myAssociativeArray as $myKey => $myValue ) {
   }
 
 } 
+
+//Functions.
+function addition( $num1, $num2) {
+$result = $num1 + $num2;
+return $result;
+}
+echo "\n\n Testing addition function:\n";
+echo addition ( 34, 6 );
+echo "\n\n Testing addition function:\n";
+echo addition (-508.67, "36"); //-472.67...php will find 36 inside "" and read as integer values instead of string.
+
+function sayHello ( $name= 'World' ) {
+    echo "Hello, $name!";
+}
+echo "\n\nTesting sayHello function:\n";
+sayHello();
+echo "\n\nTesting sayHello function second time:\n";
+sayHello("Harpreet");
