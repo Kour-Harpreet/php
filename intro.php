@@ -42,4 +42,13 @@ $mySecondArray = array(
   $myArray
 );
 
+$myObject = new stdClass(); // BASIC standard/generic object.
+$myObject->name = "Bob";
+$myObject->age  = 36;
+$myObject->hobbies = ["programming", "skydiving"];
+echo "\nHello, my name is {$myObject->name}.\nI am {$myObject->age} years old.\nI enjoy the following activities:";
+// Oh, we'll need to loop through our array of hobbies!
 
+foreach ( $myObject->hobbies as $hobby ) { // Note: $hobby in this case represents the current iterated item in the array. Can be any variable name.
+  echo "\n ♥ $hobby";
+} 
